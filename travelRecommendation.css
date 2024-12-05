@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./background-image.jpg');
+}
+
+nav{
+    background-image: linear-gradient(to right,rgb(24, 38, 38),rgb(89, 88, 88));
+    color: white;
+    display: flex;
+    opacity: 0.8;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0 0.5rem;
+    .menu{
+        display: flex;
+        gap: 0 2rem;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-family: arial;
+          }
+          a:hover{
+            transform: scale(1.1);
+            transition: all 0.3s;
+          }
+    }
+    .logo{
+        display: flex;
+        gap: 0 1rem;
+
+        i{
+            font-size: 2rem;
+        }
+        h1{
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .search{
+        padding:0.4rem 1rem;
+        border-radius: 2rem;
+        background-color: white;
+        input{
+            padding: 0.5rem;
+        }
+        .input-search{
+            width: 18.75rem;
+            border: none;
+            padding: 0 0.4rem;
+            font-size: 15px;
+            color: forestgreen;
+            /* border-radius: 10px; */
+            outline: none;
+        }
+        .input-search:focus{
+            border-bottom: 2px solid green;
+            border-radius: 5px;
+        }
+        .btn{
+            background-color: forestgreen;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+
+    }
+}
+.recommendations::-webkit-scrollbar {
+    display: none;
+}
+.recommendations{
+    position: fixed;
+    right: 0.5%;
+    top: 12%;
+    width: 550  px;
+    height: 70vh;
+    /* background-color: dodgerblue; */
+    /* border-radius: 5%; */
+    /* background-color: antiquewhite; */
+    /* border: 1px solid black; */
+    display: none;
+    padding: 1rem;
+    padding-top: 0;
+    overflow: auto;
+    .result{
+        background-color: white;  
+         border: none;
+         border-radius: 5%;
+         margin: 2rem 0;
+         /* padding: 0 0.5rem 0 0; */
+         padding: 1rem;
+         img{
+            width: 100%;
+            margin-bottom: 0.1rem;
+         }
+         h2{
+            font-family: arial;
+
+         }
+         p{
+            font-family: arial;
+            margin-top: 10px;
+         }
+         .btnV{
+            background-color: rgb(16, 113, 128);
+            padding: 0.4rem;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+
+         }
+    }
+}
+
+.mainpageBlock{
+    display: flex;
+    justify-content: space-around;
+    height: 92vh;
+    background-image: linear-gradient(to right,rgb(22, 87, 97),rgba(245, 245, 245, 0.514),transparent);
+    .social_icons{
+        height: 100%;
+    padding: 0.5rem;
+        width: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            height: 800px;
+        }
+        i{
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+    .textarea{
+        width: 97%;
+        height: 100%;
+        /* background-color: antiquewhite; */
+        h1{
+            font-size: 6rem;
+            font-family: arial;
+            color: white;
+            margin-top: 2.5rem;
+            margin-left: 4rem;
+        }
+        p{
+            font-family: arial;
+            color: white;
+            margin-top: 2.5rem;
+            margin-left: 4rem;
+            font-size: 1.5rem;
+        }
+        .book_now{
+            font-family: arial;
+            color:rgb(1, 117, 123);
+            margin-top: 2.5rem;
+            margin-left: 4rem;
+            background-color: white;
+            padding: 0.6rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        .book_now:hover{
+            transform: scale(1.2);
+            transition: all 0.4s ease-in-out;
+            box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0.459);
+        }
+    }
+}

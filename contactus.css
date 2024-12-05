@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url('./background-image.jpg');
+  }
+  
+  nav{
+    background-image: linear-gradient(to right,rgb(24, 38, 38),rgb(89, 88, 88));
+    color: white;
+    display: flex;
+    opacity: 0.8;
+    /* justify-content: space-between; */
+    gap: 0 17.55rem;
+    align-items: center;
+    height: 8vh;
+    padding: 0 0.5rem;
+    .menu{
+        display: flex;
+        gap: 0 2rem;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-family: arial;
+          }
+          a:hover{
+            transform: scale(1.1);
+            transition: all 0.3s;
+          }
+    }
+    .logo{
+        display: flex;
+        gap: 0 1rem;
+  
+        i{
+            font-size: 2rem;
+        }
+        h1{
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    
+}
+  .mainpageBlock{
+    display: flex;
+    justify-content: space-around;
+    height: 92vh;
+    background-image: linear-gradient(to right,rgb(22, 87, 97),rgba(245, 245, 245, 0.514),transparent);
+
+    .social_icons{
+        height: 100%;
+    padding: 0.5rem;
+        width: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            height: 800px;
+        }
+        i{
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+    .textarea{
+        width: 97%;
+        height: 100%;
+        /* background-color: antiquewhite; */
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 0 15rem;
+        align-items: center;
+        .titleh{
+            font-size: 4rem;
+            font-family: arial;
+            color: white;
+            margin-top: 2.5rem;
+            margin-left: 4rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+            width: 40rem;
+            padding: 2rem;
+            border: none;
+            border-radius: 2rem;
+            background-color: rgba(0, 0, 0, 0.295);
+
+            label{
+                color: white;
+                font-family: Arial;
+                /* font-weight: bold; */
+                font-size: 1.2rem;
+            }
+            input{
+                border-radius: 1rem;
+                padding: 0.5rem;
+                border: none;
+                margin: 0.5rem 0;
+            }
+            textarea{
+                border-radius: 1rem;
+                padding: 0.5rem;
+                border: none;
+                margin: 0.5rem 0;
+            }
+            .sbtn{
+                background-color: rgb(1, 117, 121);
+            }
+
+        }
+        
+  
+        }
+}
